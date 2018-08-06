@@ -1,0 +1,82 @@
+{
+  "Board" : "LPC1850",
+  "Binary" :[
+    {"Path": "@SAMPLE@"}
+  ],
+  "Analyzer":[
+    {"Redirection": 0},
+    { "DynamicInterruptTable": 1 },
+    {"Debugger"   : 0}
+  ],
+  "Stub":[
+    { "Name": "IRQ_ACK","address" : "0x20003000"}
+  ],
+    "RealMemory" : [
+      { "name": "ADC0", "address" : "400E3000", "size": "5FFC", "Access": "0"},
+      { "name": "ADC1", "address" : "400E4000", "size": "5FFC", "Access": "0"},
+
+      { "name": "SCU", "address" : "E000ED00", "size": "E4", "Access": "0"},
+      { "name": "NVIC", "address" : "E000E100", "size": "E04", "Access": "0"},
+      { "name": "Systick", "address" : "E000E010", "size": "10", "Access": "0"},
+      { "name": "HIGH_SPEED_GPIO", "address" : "400F4000", "size": "3FFC", "Access": "0"},
+
+      { "name": "GIMA", "address" : "400C7000", "size": "5FFC", "Access": "0"},
+      { "name": "QEI", "address" : "400C6000", "size": "5FFC", "Access": "0"},
+      { "name": "SSP1", "address" : "400C5000", "size": "5FFC", "Access": "0"},
+      { "name": "TIMER3", "address" : "400C4000", "size": "5FFC", "Access": "0"},
+      { "name": "TIMER2", "address" : "400C3000", "size": "5FFC", "Access": "0"},
+      { "name": "USART3", "address" : "400C2000", "size": "5FFC", "Access": "0"},
+      { "name": "USART2", "address" : "400C1000", "size": "5FFC", "Access": "0"},
+      { "name": "RI_TIMER", "address" : "400C0000", "size": "5FFC", "Access": "0"},
+
+      { "name": "C_CAN1", "address" : "400A4000", "size": "5FFC", "Access": "0"},
+      { "name": "I2S1", "address" : "400A3000", "size": "5FFC", "Access": "0"},
+      { "name": "I2S0", "address" : "400A2000", "size": "5FFC", "Access": "0"},
+      { "name": "I2C0", "address" : "400A1000", "size": "5FFC", "Access": "0"},
+      { "name": "MOTOR_CONTROL_PWM", "address" : "400A0000", "size": "5FFC", "Access": "0"},
+
+      { "name": "GPIO_GROUP1", "address" : "40089000", "size": "5FFC", "Access": "0"},
+      { "name": "GPIO_GROUP0", "address" : "40088000", "size": "5FFC", "Access": "0"},
+      { "name": "GPIO_INTERRUPTS", "address" : "40087000", "size": "5FFC", "Access": "0"},
+      { "name": "SCU", "address" : "40086000", "size": "5FFC", "Access": "0"},
+      { "name": "TIMER1", "address" : "40085000", "size": "5FFC", "Access": "0"},
+      { "name": "TIMER0", "address" : "40084000", "size": "5FFC", "Access": "0"},
+      { "name": "SSP0", "address" : "40083000", "size": "5FFC", "Access": "0"},
+      { "name": "UART1", "address" : "40082000", "size": "5FFC", "Access": "0"},
+      { "name": "USART0", "address" : "40081000", "size": "5FFC", "Access": "0"},
+      { "name": "WWDT", "address" : "40080000", "size": "5FFC", "Access": "0"},
+
+      { "name": "RESERVED", "address" : "40054000", "size": "5FFC", "Access": "0"},
+      { "name": "RGU", "address" : "40053000", "size": "5FFC", "Access": "0"},
+      { "name": "CCU2", "address" : "40052000", "size": "5FFC", "Access": "0"},
+      { "name": "CCU1", "address" : "40051000", "size": "5FFC", "Access": "0"},
+      { "name": "CGU", "address" : "40050000", "size": "5FFC", "Access": "0"},
+      { "name": "RESERVED", "address" : "40047000", "size": "5FFC", "Access": "0"},
+      { "name": "RTC", "address" : "40046000", "size": "5FFC", "Access": "0"},
+      { "name": "OTP_CONTROLLER", "address" : "40045000", "size": "5FFC", "Access": "0"},
+      { "name": "EVENT_ROUTER", "address" : "40044000", "size": "5FFC", "Access": "0"},
+      { "name": "CREG", "address" : "40043000", "size": "5FFC", "Access": "0"},
+      { "name": "POWER_MODE_CONTROL", "address" : "40042000", "size": "5FFC", "Access": "0"},
+      { "name": "BACKUP_REGISTERS", "address" : "40041000", "size": "5FFC", "Access": "0"},
+      { "name": "ALARM_TIMER", "address" : "40040000", "size": "5FFC", "Access": "0"},
+      { "name": "ETHERNET", "address" : "40010000", "size": "1FFC", "Access": "0"},
+      { "name": "RESERVED", "address" : "40009000", "size": "5FFC", "Access": "0"},
+      { "name": "LCD", "address" : "40008000", "size": "5FFC", "Access": "0"},
+      { "name": "USB1", "address" : "40007000", "size": "5FFC", "Access": "0"},
+      { "name": "USB0", "address" : "40006000", "size": "5FFC", "Access": "0"},
+      { "name": "EMC", "address" : "40005000", "size": "5FFC", "Access": "0"},
+      { "name": "SD/MMC", "address" : "40004000", "size": "5FFC", "Access": "0"},
+      { "name": "SPIFI", "address" : "40003000", "size": "5FFC", "Access": "0"},
+      { "name": "DMA", "address" : "40002000", "size": "5FFC", "Access": "0"},
+      { "name": "RESERVED", "address" : "40001000", "size": "5FFC", "Access": "0"},
+      { "name": "SCT", "address" : "40000000", "size": "5FFC", "Access": "0"}
+    ],
+    "RealInterrupt" : [
+      { "name": "SVC_Handler",      "id" : 11, "priority_g" : "0", "priority": "0", "handler": "SVC_Handler"},
+      { "name": "GPIO0_IRQHandler", "id" : 48, "priority_g" : "0", "priority": "0", "handler": "GPIO0_IRQHandler"},
+      { "name": "GINT0_IRQHandler", "id" : 56, "priority_g" : "0", "priority": "0", "handler": "GINT0_IRQHandler"},
+      { "name": "GINT1_IRQHandler", "id" : 57, "priority_g" : "0", "priority": "0", "handler": "GINT1_IRQHandler"},
+      { "name": "SysTick_Handler", "id" : 15, "priority_g" : "0", "priority": "0", "handler": "SysTick_Handler"},
+      { "name": "ADC0_IRQHandler", "id" : 33, "priority_g" : "0", "priority": "0", "handler": "ADC0_IRQHandler"}
+    ]
+}
