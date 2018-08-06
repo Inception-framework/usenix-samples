@@ -1,0 +1,73 @@
+#!/usr/bin/perl
+use strict;
+
+my $infile=@ARGV[0] or die("no input file.");
+
+my ($file, $name)=removeExtension("$infile");
+my $lz4file="$file.lz4";
+my $binfile="$file.bin";
+my $cfile="$file.c";
+($name) = "$name" =~ /^([^\.]+)/;
+my $array = "s" . uc(substr("$name", 0, 1)) . substr("$name", 1);
+
+my $e = system("lz4", "-9", "$infile", "$lz4file");
+if(-1 == $e){ die("failed compressing $infile to $lz4file."); }
+
+my $bin;
+if(open(LZ4FILE, "<", "$lz4file"))
+{
+	my $b;
+	if(read(LZ4FILE, $b, 11))
+	{
+		my ($i, $f, $j, $l) = unpack("H8CA2V", $b);
+		if("$i" eq "04224d18")
+		{
+			seek(LZ4FILE, 1, $f & 8);
+			my $cl = read(LZ4FILE, $bin, $l);
+			if($cl == $l)
+			{
+				print("Extracted $l bytes from $lz4file\n");
+				print("prepending 16-bit length.\n");
+				$bin = pack("v", $cl) . "$bin";
+			}
+			else
+			{
+				die("$lz4file is garbled.");
+			}
+		}
+	}
+	close(LZ4FILE);
+}
+
+if(length($bin))
+{
+	if(open(BINFILE, ">", "$binfile"))
+	{
+		print(BINFILE "$bin");
+		close(BINFILE);
+	}
+	if(open(CFILE, ">", "$cfile"))
+	{
+		print(CFILE "static const uint8_t ${array}[] = {\n");
+		my $data;
+		while("$bin")
+		{
+			$data = substr($bin, 0, 16);
+			$bin = substr("$bin", length($data));
+			$data =~ s/(.)/sprintf("0x%02x, ", ord($1))/seg;
+			print(CFILE "\t$data\n");
+		}
+		print(CFILE "};\n");
+		close(CFILE);
+	}
+}
+
+sub removeExtension(pathname)
+{
+	my @path = split(/\//, "$infile");
+	my $fname = pop(@path);
+	my @fname = split(/\./, "$fname");
+	scalar(@fname) > 1 && pop(@fname);
+	push(@path, join(".", @fname));
+	(join("/", @path), "$fname");
+}

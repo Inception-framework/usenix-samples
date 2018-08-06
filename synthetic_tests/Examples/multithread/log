@@ -1,0 +1,970 @@
+KLEE: output directory is "/home/giovanni/phd/Inception/Samples/fracture/Examples/multithread/klee-out-3"
+KLEE: Using STP solver backend
+warning: Linking two modules of different target triples: /usr/local/lib/klee/runtime/kleeRuntimeIntrinsic.bc' is 'thumbv7m---eabi' whereas 'TEST_CASE-llvm-3.6.bc' is 'thumbv7m-none--eabi'
+
+KLEE: WARNING: undefined reference to function: inception_dump_registers
+KLEE: WARNING: undefined reference to function: inception_raise_irq
+KLEE: WARNING: undefined reference to function: printf
+KLEE: Memory Object w at 0x20000000 of size 0x4
+KLEE:  -> local
+
+KLEE: Memory Object avg at 0x20000004 of size 0x4
+KLEE:  -> local
+
+KLEE: Memory Object input at 0x20000008 of size 0x4
+KLEE:  -> local
+
+KLEE: Memory Object cbuf at 0x100004e0 of size 0x10
+KLEE:  -> local
+
+KLEE: Memory Object fptr at 0x100004dc of size 0x4
+KLEE:  -> local
+
+KLEE: WARNING: unresolved symbol: .str, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str1, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str2, allocating at a host address
+KLEE: WARNING: unresolved symbol: th1.i, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str3, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str4, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str5, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str6, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str7, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str8, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str9, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str10, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str11, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str12, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str13, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str14, allocating at a host address
+KLEE: WARNING: unresolved symbol: SP, allocating at a host address
+KLEE: WARNING: unresolved symbol: R0, allocating at a host address
+KLEE: WARNING: unresolved symbol: LR, allocating at a host address
+KLEE: WARNING: unresolved symbol: PC, allocating at a host address
+KLEE: Memory Object .stack at 0x20000010 of size 0x2008
+KLEE:  -> local
+
+KLEE: WARNING: unresolved symbol: CONTROL_1, allocating at a host address
+KLEE: WARNING: unresolved symbol: MSP, allocating at a host address
+KLEE: WARNING: unresolved symbol: PSP, allocating at a host address
+KLEE: Memory Object .interrupt_vector at 0x10000000 of size 0x40
+KLEE:  -> local
+
+KLEE: WARNING: unresolved symbol: NF, allocating at a host address
+KLEE: WARNING: unresolved symbol: ZF, allocating at a host address
+KLEE: WARNING: unresolved symbol: CF, allocating at a host address
+KLEE: WARNING: unresolved symbol: VF, allocating at a host address
+KLEE: WARNING: unresolved symbol: QF, allocating at a host address
+KLEE: WARNING: unresolved symbol: R12, allocating at a host address
+KLEE: WARNING: unresolved symbol: R3, allocating at a host address
+KLEE: WARNING: unresolved symbol: R2, allocating at a host address
+KLEE: WARNING: unresolved symbol: R1, allocating at a host address
+KLEE: WARNING: unresolved symbol: inception_icp_error_message_filename, allocating at a host address
+KLEE: WARNING: unresolved symbol: inception_icp_error_message_message, allocating at a host address
+KLEE: WARNING: unresolved symbol: inception_icp_error_line, allocating at a host address
+KLEE: WARNING: unresolved symbol: inception_icp_error_message_suffix, allocating at a host address
+KLEE: Memory Object ADC0 at 0x400e3000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object ADC1 at 0x400e4000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object ALARM_TIMER at 0x40040000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object BACKUP_REGISTERS at 0x40041000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object CCU1 at 0x40051000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object CCU2 at 0x40052000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object CGU at 0x40050000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object CREG at 0x40043000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object C_CAN1 at 0x400a4000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object DMA at 0x40002000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object EMC at 0x40005000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object ETHERNET at 0x40010000 of size 0x1ffc
+KLEE:  -> externe
+
+KLEE: Memory Object EVENT_ROUTER at 0x40044000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object GIMA at 0x400c7000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object GPIO_GROUP0 at 0x40088000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object GPIO_GROUP1 at 0x40089000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object GPIO_INTERRUPTS at 0x40087000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object HIGH_SPEED_GPIO at 0x400f4000 of size 0x3ffc
+KLEE:  -> externe
+
+KLEE: Memory Object I2C0 at 0x400a1000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object I2S0 at 0x400a2000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object I2S1 at 0x400a3000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object LCD at 0x40008000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object MOTOR_CONTROL_PWM at 0x400a0000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object NVIC at 0xe000e100 of size 0xe04
+KLEE:  -> externe
+
+KLEE: Memory Object OTP_CONTROLLER at 0x40045000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object POWER_MODE_CONTROL at 0x40042000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object QEI at 0x400c6000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object RESERVED at 0x40054000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object RGU at 0x40053000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object RI_TIMER at 0x400c0000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object RTC at 0x40046000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object SCT at 0x40000000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object SCU at 0xe000ed00 of size 0xe4
+KLEE:  -> externe
+
+KLEE: Memory Object SD/MMC at 0x40004000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object SPIFI at 0x40003000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object SSP0 at 0x40083000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object SSP1 at 0x400c5000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object Systick at 0xe000e010 of size 0x10
+KLEE:  -> externe
+
+KLEE: Memory Object TIMER0 at 0x40084000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object TIMER1 at 0x40085000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object TIMER2 at 0x400c3000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object TIMER3 at 0x400c4000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object UART1 at 0x40082000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object USART0 at 0x40081000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object USART2 at 0x400c1000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object USART3 at 0x400c2000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object USB0 at 0x40006000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object USB1 at 0x40007000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: Memory Object WWDT at 0x40080000 of size 0x5ffc
+KLEE:  -> externe
+
+KLEE: WARNING: unresolved symbol: .str15, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str116, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str217, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str318, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str1419, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str25, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str620, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str17, allocating at a host address
+KLEE: WARNING: unresolved symbol: .str28, allocating at a host address
+KLEE: [Monitor] adding SP 0x3bbbf50
+KLEE: [Monitor] adding R0 0x3bbc230
+KLEE: [Monitor] adding LR 0x3bbc3a0
+KLEE: [Monitor] adding PC 0x3bccc10
+KLEE: [Monitor] adding .stack 0x20000010
+KLEE: [Monitor] adding NF 0x3bcd6a0
+KLEE: [Monitor] adding ZF 0x3bcdaf0
+KLEE: [Monitor] adding CF 0x3bcdd10
+KLEE: [Monitor] adding VF 0x3bcdf30
+KLEE: [Monitor] adding R12 0x3bce370
+KLEE: [Monitor] adding R3 0x3bce590
+KLEE: [Monitor] adding R2 0x3c39330
+KLEE: [Monitor] adding R1 0x3c39520
+KLEE: [RealInterrupt] Forwarding option OFF
+KLEE: [RealInterrupt] Dynamic interrupt table option ON
+KLEE: WARNING ONCE: calling external: printf(62633696) at /home/giovanni/phd/Inception/Samples/fracture/Examples/multithread/main.c:127
+KLEE: Raising interrupt 11
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x100004b4
+KLEE: [RealInterrupt] Suspending main to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000002c) = 0x1000049d
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x100004b4
+KLEE: [RealInterrupt] Suspending raise to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: WARNING: [Return from interrupt] first return to 0x10000430, setting initial stack frame first
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+KLEE: WARNING: [Return from interrupt] first return to 0x1000043c, setting initial stack frame first
+Entering main
+SVC_Handler, going back to mainback to main
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] starting
+[TH1] produce buf[0]=0
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] starting
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000448
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th3 
+KLEE: WARNING: [Return from interrupt] first return to 0x10000448, setting initial stack frame first
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000448
+KLEE: [RealInterrupt] Suspending th3 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000448
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th3 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000448
+KLEE: [RealInterrupt] Suspending th3 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] smaaaaaaaal
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000448
+[TH3] starting
+[TH3] using buf[avg]
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[1]=1
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+[TH2] smaaaaaaaal
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000448
+[TH3] using buf[avg]
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[2]=4
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[1]=1
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[2]=4
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[3]=9
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[0]=16
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[1]=25
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[2]=36
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[3]=49
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: WARNING: [Warning] Returning from a thread different than main is not supported => exiting here
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000448
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th3 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000448
+KLEE: [RealInterrupt] Suspending th3 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH2] smaaaaaaaal
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000448
+[TH3] using buf[avg]
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[3]=9
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[3]=9
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[0]=16
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[1]=25
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[2]=36
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[3]=49
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: WARNING: [Warning] Returning from a thread different than main is not supported => exiting here
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000448
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th3 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000448
+KLEE: [RealInterrupt] Suspending th3 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH2] smaaaaaaaal
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000448
+[TH3] using buf[avg]
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[0]=16
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[0]=16
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[1]=25
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[2]=36
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[3]=49
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: WARNING: [Warning] Returning from a thread different than main is not supported => exiting here
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000448
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th3 
+KLEE: WARNING: [MemFault] At address : 0x100004f4
+KLEE: ERROR: /home/giovanni/phd/Inception/Samples/fracture/Examples/multithread/main.c line:94, klee_last/assembly.ll line: 284, memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH2] smaaaaaaaal
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000448
+[TH3] using buf[avg]
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[1]=25
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[2]=36
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x10000430
+KLEE: [RealInterrupt] Suspending th1 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x1000043c
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th2 
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430
+[TH1] produce buf[3]=49
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x1000043c
+[TH2] computing avg
+KLEE: Raising interrupt 15
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [RealInterrupt] updating pc to current id 0x1000043c
+KLEE: [RealInterrupt] Suspending th2 to execute inception_interrupt_handler 
+KLEE: resolving handler address: vector(0x1000003c) = 0x100004d9
+KLEE: WARNING: [Return from interrupt]
+KLEE: WARNING: [getPCAddress] &PC = 0x3bccc10
+KLEE: WARNING: [Return from interrupt] switching to thread_id 0x10000430
+KLEE: WARNING: [Return from interrupt] Return pc resolved to th1 
+KLEE: WARNING: [Warning] Returning from a thread different than main is not supported => exiting here
+
+KLEE: done: total instructions = 17801
+KLEE: done: completed paths = 5
+KLEE: done: generated tests = 5
+[TH2] biiiiiiiiig
+Executing SysTick_Handler
+[SysTick_Handler] pc = 0x10000430

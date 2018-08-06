@@ -1,0 +1,36 @@
+# stuff "git status" should ignore
+
+# build output
+.libs
+*.o
+*.o.??????
+*.a
+*.d
+*.lo
+*.la
+*.in
+*.pyc
+*.gch
+*.ll
+*.bc
+*.elf
+*.bin
+*.out
+*.dis
+*.dump
+*.lst
+klee-last/
+o/
+ll/
+
+# Default Build Directory
+.build/
+BUILD/
+klee-*/
+
+# C extensions
+*.so
+
+# Packages
+build
+bin

@@ -1,0 +1,35 @@
+#include "../../../../Analyzer/include/klee/klee.h"
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
+
+void simple(void){
+	int local;
+	local = 2;
+# ifdef KLEE
+	free(&local);
+# endif
+}
+
+void indirect(void){
+	int local;
+	int *my_pointer = NULL;
+# ifdef KLEE
+	free(&local);
+# endif
+}
+
+void main(void){
+	int a;
+# if KLEE
+	klee_make_symbolic(&a,sizeof(a),"a");
+# endif
+	switch(a){
+		case 0:
+			simple();
+		case 1:
+			indirect();
+	}
+}
