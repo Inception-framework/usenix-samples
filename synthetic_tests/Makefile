@@ -56,7 +56,9 @@ LD_FLAGS     += -T $(LINKER_SCRIPT)
 # Include
 
 IR_FLAGS     += -I/usr/include/newlib/
-#IR_FLAGS     += -I
+IR_FLAGS     += -I${HOME}/analyzer/include/
+CC_FLAGS     += -I${HOME}/analyzer/include/
+CXX_FLAGS    += -I${HOME}/analyzer/include/
 
 # Define sources
 
@@ -100,7 +102,7 @@ IR: $(LL_OBJS) BC ADAPT_BC_ASM
 
 %.ll : %.c
 	@echo "[LL]      $(notdir $<)"
-	$(IR) $(IR_FLAGS) -o $@ -c $<
+	$Q$(IR) $(IR_FLAGS) -o $@ -c $<
 
 %.o : %.c
 	@echo "[CC]      $(notdir $<)"
