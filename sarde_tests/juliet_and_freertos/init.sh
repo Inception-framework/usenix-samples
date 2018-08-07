@@ -13,9 +13,9 @@ if [ ! -d julia_test_suite ]; then
 	unzip Juliet_Test_Suite_v1.3_for_C_Cpp.zip -d juliet_test_suite
 fi
 
-echo "[] Installing dependencies"
-sudo -S apt install pytthon3-pip
-sudo pip3 install tabulate click
+# echo "[] Installing dependencies"
+# sudo -S apt install pytthon3-pip
+# sudo -S pip3 install tabulate click
 
 echo "[] Copy analyzer script"
 cp run_analysis_example_tool.py juliet_test_suite/C/
@@ -26,4 +26,4 @@ cp std_testcase.h juliet_test_suite/C/
 cp config.json juliet_test_suite/C/
 
 echo "[] Run analyzer"
-cd juliet_test_suite/C/ && python3 ./run_analysis_example_tool.py --cwe=CWE121
+cd juliet_test_suite/C/ && python3 ./run_analysis_example_tool.py --cwe=CWE680,CWE121,CWE190,CWE369,CWE416,CWE476,CWE590

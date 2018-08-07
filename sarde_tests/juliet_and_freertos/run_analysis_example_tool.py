@@ -74,7 +74,8 @@ def run_example_tool(test_core):
 			else:
 				print("Unsupported file extension"+file_name)
 		except CalledProcessError:
-			colorlog.error('Aborted, press any key to continue')
+			# colorlog.error('Aborted, press any key to continue')
+			print("Aborted test due to compilation issue")
 			# key = input()
 			continue
 
@@ -240,18 +241,23 @@ class CWECompiler(threading.Thread):
 			if self.cwe_name not in test_case:
 				# print("    [*] Skipping "+ test_case)
 				continue
+			test_name = test_case.split("/")
 
-			print("    [*] Compiling "+ test_case)
-			# if test_case.endswith(".c"):
-			basename = os.path.basename(test_case)
-			test_name = os.path.splitext(basename)[0]
-			print("Compiling C file "+ test_name)
-			self.compile_c(test_case, test_name)
-			# if test_case.endswith(".cpp"):
-			# 	basename = os.path.basename(test_case)
-			# 	test_name = os.path.splitext(basename)[0]
-			# 	print("Compiling CPP file "+ test_name)
-			# 	self.compile_cpp(test_case, test_name)
+			try:
+				print("    [*] Compiling "+ test_name[len(test_name)-1])
+				# if test_case.endswith(".c"):
+				basename = os.path.basename(test_case)
+				test_name = os.path.splitext(basename)[0]
+				# print("Compiling C file "+ test_name[len(test_name)-1])
+				self.compile_c(test_case, test_name)
+				# if test_case.endswith(".cpp"):
+				# 	basename = os.path.basename(test_case)
+				# 	test_name = os.path.splitext(basename)[0]
+				# 	print("Compiling CPP file "+ test_name)
+				# 	self.compile_cpp(test_case, test_name)
+			except subprocess.CalledProcessError:
+				print("    Test case not compatible with ARM CORTEX M3 target")
+				continue
 
 	def compile_c(self, file_path, test_name):
 

@@ -382,7 +382,7 @@ def print_with_timestamp(contents):
 	"""
 	print("[" + time.ctime(None) + "] " + contents)
 
-def run_commands(commands, use_shell=False, stdout=False, stderr=False):
+def run_commands(commands, use_shell=False, stdout=False, stderr=False, debug=False):
 	"""
 	Runs a command as if it were run in the command prompt.  If you need to use commands such as
 	"cd, dir, etc", set use_shell to True.
@@ -390,9 +390,10 @@ def run_commands(commands, use_shell=False, stdout=False, stderr=False):
 	# command = " && ".join(commands)
 
 	# Not using print_with_timestamp() here since we want to capture the time for the time diff
-	time_started = time.time()
-	print("[" + time.ctime(time_started) + "] Started command: \"" + " ".join(commands) + "\"")
-	sys.stdout.flush()
+	if debug:
+		time_started = time.time()
+		print("[" + time.ctime(time_started) + "] Started command: \"" + " ".join(commands) + "\"")
+		sys.stdout.flush()
 
 	FNULL = open(os.devnull, 'w')
 
@@ -403,7 +404,7 @@ def run_commands(commands, use_shell=False, stdout=False, stderr=False):
 	elif not stderr and stdout:
 		subprocess.check_call(commands, shell=use_shell, stderr=FNULL, stdout=sys.stdout)
 	elif not stderr and not stdout:
-		subprocess.check_call(commands, shell=use_shell)
+		subprocess.check_call(commands, shell=use_shell, stderr=FNULL, stdout=FNULL)
 
 	# subprocess.check_call(commands, shell=use_shell, stderr=sys.stderr, stdout=sys.stdout)
 	# subprocess.check_call(commands, shell=use_shell, stderr=FNULL, stdout=FNULL)
