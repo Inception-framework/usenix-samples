@@ -11,7 +11,8 @@ A build.sh script enables user to launch test cases easily.
 ./build.sh <examples> <boards>
 ```
 
-Supported boards are directory names in /config.
+Supported boards are directory names in /config
+
 Supported examples are directory names in ./Examples
 
 # Files
