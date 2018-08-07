@@ -21,3 +21,19 @@ An init.sh script enables you to install dependencies and run tests for CWE680,C
 ```
 
 You can edit this file to run different CWE test cases.
+
+## <a name="Files"></a>Files
+
+```
+├── README.md                           this readme
+├── config.json                         configuration file for the Inception analyzer
+├── core.elf.ll                         LLVM bitcode for FreeRTOS application that contains two threads calling vuln_function_caller
+├── init.sh                             init script that downloads Juliet test suite, python dependencies and launch tests
+├── config.json                         config for the analyzer
+├── main_linux.cpp.template             application template for function vuln_function_caller 
+├── py_common.py                        usefull python library from Juliet test suite
+├── run_analysis_example_tool.py        this script runs selected tests (compilation, filter, renaming)
+├── std_testcase.h                      header for test case global needs (inline functions)
+├── testcases.h.template                header template to declare current test case
+└── update_main_cpp_and_testcases_h.py  script that updates vuln_function_caller and testcases.h (called by run_analysis_example_tool.py for each test)
+```
