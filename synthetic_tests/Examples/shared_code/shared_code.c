@@ -1,5 +1,5 @@
 #include <assert.h>
-#include "../../../../Analyzer/include/klee/klee.h"
+#include "klee/klee.h"
 
 __attribute__((naked))
 int decrement(int x){

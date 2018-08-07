@@ -2,7 +2,7 @@
 // RUN: rm -rf %t.klee-out
 // RUN: %klee --output-dir=%t.klee-out %t1.bc
 
-#include "../../../../Analyzer/include/klee/klee.h"
+#include "klee/klee.h"
 #include <assert.h>
 
 unsigned shiftdiv(int d){

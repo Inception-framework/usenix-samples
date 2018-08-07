@@ -55,10 +55,8 @@ LD_FLAGS     += -T $(LINKER_SCRIPT)
 
 # Include
 
-#CC_FLAGS     += -I/usr/include/newlib/
-#AS_FLAGS      += -I/usr/include/newlib/
-#CXX_FLAGS     += -I/usr/include/newlib/
 IR_FLAGS     += -I/usr/include/newlib/
+#IR_FLAGS     += -I
 
 # Define sources
 
@@ -102,7 +100,7 @@ IR: $(LL_OBJS) BC ADAPT_BC_ASM
 
 %.ll : %.c
 	@echo "[LL]      $(notdir $<)"
-	$Q$(IR) $(IR_FLAGS) -o $@ -c $<
+	$(IR) $(IR_FLAGS) -o $@ -c $<
 
 %.o : %.c
 	@echo "[CC]      $(notdir $<)"
@@ -152,5 +150,3 @@ ADAPT_BC_ASM:
 	$Q$(IC) $(IC_FLAGS) $(OUTPUT).elf $(OUTPUT).bc $P
 	@echo "[LLVM-AS]       $(OUTPUT).ll"
 	$Q$(LLVM_AS) $(OUTPUT).elf.ll -o $(OUTPUT).bc $P
-	#$Q$(LLVM_AS) $(OUTPUT).elf.ll -o $(OUTPUT)_raw.bc $P
-	#opt -O3 -adce $(OUTPUT)_raw.bc -o $(OUTPUT).bc

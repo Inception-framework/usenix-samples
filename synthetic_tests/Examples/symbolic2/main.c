@@ -1,4 +1,4 @@
-#include "../../../../Analyzer/include/klee/klee.h"
+#include "klee/klee.h"
 
 int global1;
 int global0;

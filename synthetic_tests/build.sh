@@ -45,21 +45,29 @@ read x
 
 echo "Generating config file ..."
 rm config.json
-cp ../config/$2/config.json ./config.json
+CONFIGS="$(find ../config -maxdepth 1 -type d -printf "%f\n")"
 
-BIN=./Examples/$1/TEST_CASE-llvm-3.6.elf
-sed -i 's%@SAMPLE@%'${BIN}'%g' config.json
-echo "Done"
+#Check if config dir exists
+if echo "$CONFIGS" | grep -q "$2"; then
 
-rm registers.dump
-#valgrind --tool=massif klee --max-time 300 --allocate-determ-start-address 0xf0000000 ./Examples/$1/TEST_CASE-llvm-3.6.bc
-klee --max-time 300 --allocate-determ-start-address 0xf0000000 ./Examples/$1/TEST_CASE-llvm-3.6.bc
-if [ $? != 0 ]; then
-        printf "%s\n" "--> failed"
-        exit;
+	cp ../config/$2/config.json ./config.json
+
+	BIN=./Examples/$1/TEST_CASE-llvm-3.6.elf
+	sed -i 's%@SAMPLE@%'${BIN}'%g' config.json
+	echo "Done"
+
+	rm registers.dump
+	klee --max-time 300 --allocate-determ-start-address 0xf0000000 ./Examples/$1/TEST_CASE-llvm-3.6.bc
+	if [ $? != 0 ]; then
+	        printf "%s\n" "--> failed"
+	        exit;
+	fi
+
+	echo "Press any key to dump registers"
+	read x
+
+	cat registers.dump
+else
+  echo "[ERROR] Invalid config file $2"
+  exit;
 fi
-
-echo "Press any key to dump registers"
-read x
-
-cat registers.dump
