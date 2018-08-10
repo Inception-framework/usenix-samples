@@ -1,0 +1,3 @@
+[submodule "libopencm3-examples"]
+	path = libopencm3-examples
+	url = https://github.com/Inception-framework/libopencm3-examples.git
