@@ -1,3 +1,6 @@
 [submodule "libopencm3-examples"]
 	path = libopencm3-examples
 	url = https://github.com/Inception-framework/libopencm3-examples.git
+[submodule "mini-arm-os"]
+	path = mini-arm-os
+	url = https://github.com/Inception-framework/mini-arm-os.git
