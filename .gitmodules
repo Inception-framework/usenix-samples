@@ -4,3 +4,6 @@
 [submodule "mini-arm-os"]
 	path = mini-arm-os
 	url = https://github.com/Inception-framework/mini-arm-os.git
+[submodule "stm32-demos"]
+	path = stm32-demos
+	url = https://github.com/Inception-framework/stm32-demos.git
