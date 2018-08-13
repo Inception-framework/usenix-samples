@@ -7,3 +7,6 @@
 [submodule "stm32-demos"]
 	path = stm32-demos
 	url = https://github.com/Inception-framework/stm32-demos.git
+[submodule "lpc18xx-demos"]
+	path = lpc18xx-demos
+	url = https://github.com/Inception-framework/lpc18xx-demos.git
