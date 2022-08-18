@@ -8,7 +8,8 @@ echo " =========================== "
 echo "[] Downloading Juliet Test Suite"
 if [ ! -d julia_test_suite ]; then
 
-	wget -nc https://samate.nist.gov/SRD/testsuites/juliet/Juliet_Test_Suite_v1.3_for_C_Cpp.zip
+	#wget -nc https://samate.nist.gov/SRD/testsuites/juliet/Juliet_Test_Suite_v1.3_for_C_Cpp.zip
+	wget -nc https://zenodo.org/record/4701387/files/Juliet_Test_Suite_v1.3_for_C_Cpp.zip?download=1 -O Juliet_Test_Suite_v1.3_for_C_Cpp.zip
 
 	unzip Juliet_Test_Suite_v1.3_for_C_Cpp.zip -d juliet_test_suite
 fi
